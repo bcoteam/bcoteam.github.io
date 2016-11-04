@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>BrandCo Custom Websites</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+	<div id="loggedout">
+		<a id="connect" href="#0">Connect To Trello</a>
+	</div>
+
+	<div id="loggedin">
+		<main>
+			<section id="main-section">
+				<div class="container">
+					<nav>
+						<ul>
+							<li><a href="#all" data-toggle="all">All</a></li>
+							<li><a href="#dev" data-toggle="dev">Dev</a></li>
+							<li><a href="#beta" data-toggle="beta">Beta</a></li>
+							<li><a href="#live" data-toggle="live">Live</a></li>
+						</ul>
+					</nav>
+
+					<div>
+						<ul id="all-list">
+							<li id="dev-list-container">
+								<h2>Dev <span id="dev-count"></span></h2>
+								<ul id="dev-cards"></ul>
+							</li>
+							<li id="beta-list-container">
+								<h2>Beta <span id="beta-count"></span></h2>
+								<ul id="beta-cards"></ul>
+							</li>
+							<li id="live-list-container">
+								<h2>Live <span id="live-count"></span></h2>
+								<ul id="live-cards"></ul>
+							</li>
+						</ul>						
+					</div>
+
+					<div id="stats-container" class="stats-container">
+						
+					</div>
+
+				</div>
+			</section>
+		</main>
+
+		<div id="header">
+			Logged in to as <span id="username"></span> 
+			<a id="disconnect" href="#">Log Out</a>
+		</div>
+
+	</div>    
+
+
+	<!-- Scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://trello.com/1/client.js?key=00c216e71faaa6ddff3de6d9e5a72437"></script>
+	<script src="main.js"></script>
+</body>
+</html>

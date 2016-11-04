@@ -1,0 +1,167 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    color: #263238;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    background-color: #fff;
+}
+
+#main-section {
+    padding: 60px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#all-list > li {
+    margin-bottom: 40px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.2);
+}
+
+#all-list > li > ul {
+    background-color: #fff;
+}
+
+#all-list h2 {
+    background-color: #ECEFF1;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 3px 3px 0 0;
+}
+
+#dev-list-container > h2 {
+    background-color: #B71C1C;
+    color: #fff;
+}
+
+#beta-list-container > h2 {
+    background-color: #FFF59D;
+}
+
+#live-list-container > h2 {
+    background-color: #689F38;
+    color: #fff;
+}
+
+#all-list h3 {
+    padding: 10px 30px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+#all-list h3:hover {
+    background-color: rgba(0,0,0,0.02);
+}
+
+.card-body {
+    background-color: #CFD8DC;
+    padding: 20px 40px;
+}
+
+.card-body p {
+    margin: 10px 0;
+}
+
+nav {
+    background-color: #37474F;
+    padding: 10px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    font-size: 20px;
+    margin-bottom: 40px;
+    border-radius: 3px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    background-color: #0091EA;
+    border-radius: 3px;
+}
+
+strong {
+    font-weight: 700;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+[data-show="dev"] #all-list > li:not(#dev-list-container) {
+    display: none;
+}
+
+[data-show="beta"] #all-list > li:not(#beta-list-container) {
+    display: none;
+}
+
+[data-show="live"] #all-list > li:not(#live-list-container) {
+    display: none;
+}
+
+.card-body {
+    display: none;
+}
+
+.show-card-details .card-body {
+    display: block;
+}
